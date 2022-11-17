@@ -1,0 +1,60 @@
+<!doctype html>
+<link rel="stylesheet" href="Selector.css">
+<html>
+	
+	<head>
+        <script type="text/javascript">
+            function goToNewPage()
+            {
+                var url = document.getElementById('list').value;
+                if(url != 'none') {
+                    window.location = url;
+                }
+            }
+        </script>
+        
+        <title>PC Storage</title>
+	</head>
+
+     <body>
+
+        <header>
+            <h1>Team 8 PC Part Comparison</h1>
+            <nav>
+                <ul>
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="CPU.html">CPU</a></li>
+                    <li>GPU</li>
+                    <li><a href="Selector.html">Storage</a></li>
+                    <li>PSU</li>
+                </ul>
+            </nav>
+        </header>
+		 
+        <p>
+        <label>Storage Options</label>
+		</p>
+		
+        <form>
+            <select name="list" id="list" accesskey="target">
+                <option value='none' selected>Choose a Storage Option</option>
+                <option value="SSD.html">SSD</option>
+                <option value="HDD.html">HDD</option>
+                <option value="external.html">External</option>
+            </select>
+            <input type=button value="Go" onclick="goToNewPage()" />
+        </form>
+
+        <footer>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="question.html">Submit a Question</a>
+            <a href="contact.html">Contact Us</a>
+        </footer>
+            
+		 
+		
+		 
+    </body>
+	
+</html>
