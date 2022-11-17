@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SSD</title>
+</head>
+
+<body>
+	<p>Click the button to sort the list alphabetically:</p>
+<button onclick="sortList()">Sort</button>
+
+<ul id="id01">
+	<li>
+		<p>WD Blue 1TB SSD</p>
+ 		<img src = "WD Blue SSD.jpeg" alt = "WD Blue SSD">
+	</li>
+	
+	<li>
+		<p>Samsung EVO 1TB SSD</p>
+		<img src = "Samsung ssd.jpeg" alt = "Samsung SSD">
+	</li>
+	
+	<li>
+		<p>Crucial 1TB SSD</p>
+		<img src = "Crucial ssd.jpeg" alt = "Crucial SSD">
+	</li>
+	
+</ul>
+
+<script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+</body>
+</html>

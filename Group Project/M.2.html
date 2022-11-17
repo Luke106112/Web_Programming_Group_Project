@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>M.2</title>
+</head>
+
+<body>
+	<p>Click the button to sort the list alphabetically:</p>
+<button onclick="sortList()">Sort</button>
+
+<ul id="id01">
+	<li>
+		<p>WD Black 1TB M.2 NVMe</p>
+ 		<img src = "WD Black m.2.jpeg" alt = "WD Black NVMe">
+	</li>
+	
+	<li>
+		<p>Samsung 980 Pro 1TB M.2 NVMe</p>
+		<img src = "samsung m.2.jpeg" alt = "Samsung NVMe">
+	</li>
+	
+	<li>
+		<p>Crucial 1TB M.2 NVMe</p>
+		<img src = "Crucial m.2.jpeg" alt = "Crucial NVMe">
+	</li>
+	
+</ul>
+
+<script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+</body>
+</html>
