@@ -1,0 +1,123 @@
+<!DOCTYPE html>   
+<link rel="stylesheet" href="Power_Supply_CSS.css">
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Power_Supply </title>  
+
+</head>    
+    <script>
+    function sortTable2(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("myTable2");
+      switching = true;
+      // Set the sorting direction to ascending:
+      dir = "asc";
+      /* Make a loop that will continue until
+      no switching has been done: */
+      while (switching) {
+        // Start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /* Loop through all table rows (except the
+        first, which contains table headers): */
+        for (i = 1; i < (rows.length - 1); i++) {
+          // Start by saying there should be no switching:
+          shouldSwitch = false;
+          /* Get the two elements you want to compare,
+          one from current row and one from the next: */
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /* Check if the two rows should switch place,
+          based on the direction, asc or desc: */
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /* If a switch has been marked, make the switch
+          and mark that a switch has been done: */
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          // Each time a switch is done, increase this count by 1:
+          switchcount ++;
+        } else {
+          /* If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again. */
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+    </script>
+    
+<body>    
+    <h1> PC Power Supply List </h1> 
+    <form>  
+        <div class="container">   
+            <table id="myTable2">
+                <tr>
+                    <th onclick="sortTable2(0)" style="cursor:pointer" id="nameClick">PSU</th>
+                    <th onclick="sortTable2(1)" style="cursor:pointer" id="countryClick">80 Plus Rating</th>
+                    <th onclick="sortTable2(1)" style="cursor:pointer" id="countryClick">Power</th>
+                </tr>
+                    
+                    <tr>
+                    <td><a href="DarkPro.html">Dark  Pro 11</a></td><td>Platinum</td><td>1200 Watts</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="CoolerMaster.html">Cooler Master MasterWatt Maker 1200 MiJ</a></td><td>Titanium</td><td>1200 Watts</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="SeasonicPrime.html">Seasonic PRIME Series</a></td><td>Platinum, Titanium</td><td>550, 650, 750, 850, 1000, 1300 Watts</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="AntecHCP.html">Antec HCP Platinum</a></td><td>Platinum</td><td>750, 850, 1000, 1300 Watts</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="Thermaltake.html">Thermaltake Tough iRGB PLUS</a></td><td>Platinum and Titanium</td><td>850, 1050, 1200, 1250 Watts</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="CorsairAXi.html">Corsair AXi Series</a></td><td>Platinum and Titanium</td><td>1200, 1500, 1600 Watts</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="Bitfenix.html">Bitfenix Whisper</a></td><td>Gold</td><td>450, 550, 650, 750, 850 Watts</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="Straight11.html">Straight  11</a></td><td>Gold</td><td>450, 550, 750, 850, 1000 Watts</td>
+                    </tr>
+          
+                    <tr>
+                    <td><a href="Mistel.html">Mistel MX650 Fanless</a></td><td>Platinum</td><td>650 Watts</td>
+                    </tr>
+                    
+                    <tr>
+                    <td><a href="Aerocool.html">Aerocool Project 7</a></td><td>Platinum</td><td>650, 750, 850 Watts</td>
+                    </tr>
+            </table>
+                    </div>   
+                </form>     
+                <p style="vertical-align: bottom; text-align: center">
+                  <a href = "homePage.html" class = "HomePage">Home Page</a> 
+                 </p> 
+</body>     
+</html>  

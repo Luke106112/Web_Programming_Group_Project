@@ -1,0 +1,70 @@
+Body { 
+    background-color: rgb(97, 178, 155);  
+}  
+.container {      
+    text-align: center;
+} 
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+form {  
+    background-color: rgb(17, 107, 149);
+    font-size: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 70%;
+    line-height: 2;
+} 
+a:link, a:visited {
+    background-color: rgb(17, 107, 149);
+    color: rgba(7, 237, 72, 0.773);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: rgb(17, 107, 149);
+}
+th{
+    background-color: rgb(0, 132, 255);
+    color: rgba(0, 0, 0, 0.773);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 15%;
+}
+.return {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 35%;
+    font-size: large;
+}
+.ReadMore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: 45;
+}
+.HomePage{
+    background-color: rgb(0, 170, 255);
+    color:rgb(0, 249, 249);
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
