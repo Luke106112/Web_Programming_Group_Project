@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<head>
+    <meta charset ="utf-8">
+    <title> CPU Page </title>
+    <link rel="stylesheet" href="CPU.css">
+    <script src="CPU.js"></script>
+    
+</head>
+
+<html>
+
+    <body>
+        <header>
+            <h1>CPU</h1>
+            <nav>
+                <ul>
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="CPUHome.html">CPU</a></li>
+                    <li><a href="editable.html">GPU</a></li>
+                    <li><a href="Selector.html">Storage</a></li>
+                    <li><a href="Power_Supply.html">PSU</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="grid-container1">
+            <div>
+                <h2><u>13th Gen Intel CPU Model Range Selection</u></h2>
+                <ul style="text-align: left; color: white; font-size: 25px; list-style: none;">
+                    <li><button onclick="showHidei913th()">13th Gen Core i9</button></li>
+                    <li><button onclick="showHidei713th()">13th Gen Core i7</button></li>
+                    <li><button onclick="showHidei513th()">13th Gen Core i5</button></li>
+                </ul>
+
+                <h2><u>12th Gen Intel CPU Model Range Selection</u></h2>
+                <ul style="text-align: left; color: white; font-size: 25px; list-style: none;">
+                    <li><button onclick="showHidei912th()">12th Gen Core i9</button></li>
+                    <li><button onclick="showHidei712th()">12th Gen Core i7</button></li>
+                    <li><button onclick="showHidei512th()">12th Gen Core i5</button></li>
+                    <li><button onclick="showHidei312th()">12th Gen Core i3</button></li>
+                </ul>
+
+                <h2><u>11th Gen Intel CPU Model Range Selection</u></h2>
+                <ul style="text-align: left; color: white; font-size: 25px; list-style: none;">
+                    <li><button onclick="showHidei911th()">11th Gen Core i9</button></li>
+                    <li><button onclick="showHidei711th()">11th Gen Core i7</button></li>
+                    <li><button onclick="showHidei511th()">11th Gen Core i5</button></li>
+                    <li><button onclick="showHidei311th()">11th Gen Core i3</button></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2><u>Zen 4 AMD CPU Model Range Selection</u></h2>
+                <ul style="text-align: left; color: white; font-size: 25px; list-style: none;">
+                    <li><button onclick="showHideR9zen4()">Ryzen 9 Zen 4</button></li>
+                    <li><button onclick="showHideR7zen4()">Ryzen 7 Zen 4</button></li>
+                    <li><button onclick="showHideR5zen4()">Ryzen 5 Zen 4</button></li>
+                </ul>
+
+                <h2><u>Zen 3 AMD CPU Model Range Selection</u></h2>
+                <ul style="text-align: left; color: white; font-size: 25px; list-style: none;">
+                    <li><button onclick="showHideR9zen3()">Ryzen 9 Zen 3</button></li>
+                    <li><button onclick="showHideR7zen3()">Ryzen 7 Zen 3</button></li>
+                    <li><button onclick="showHideR5zen3()">Ryzen 5 Zen 3</button></li>
+                    <li><button onclick="showHideR3zen3()">Ryzen 3 Zen 3</button></li>
+                </ul>
+
+                <h2><u>Zen 2 AMD CPU Model Range Selection</u></h2>
+                <ul style="text-align: left; color: white; font-size: 25px; list-style: none;">
+                    <li><button onclick="showHideR9zen2()">Ryzen 9 Zen 2</button></li>
+                    <li><button onclick="showHideR7zen2()">Ryzen 7 Zen 2</button></li>
+                    <li><button onclick="showHideR5zen2()">Ryzen 5 Zen 2</button></li>
+                    <li><button onclick="showHideR3zen2()">Ryzen 3 Zen 2</button></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="grid-container2">
+
+            <div>
+                <!--i9 13th Gen Table-->
+                <div id="i913th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Performance Cores (Threads)</th>
+                            <th>P Core Base (Turbo) Freq.</th>
+                            <th>Efficiency Cores (Threads)</th>
+                            <th>E Core Base (Turbo) Freq.</th>
+                            <th>Base (Turbo) Power Consumption</th>
+                            <th>Integrated GPU</th>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>i9-13900K</td>
+                            <td>8 (16)</td>
+                            <td>3.0 (5.8) GHz</td>
+                            <td>16 (16)</td>
+                            <td>2.0 (4.3) GHz</td>
+                            <td>125 (253) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i9-13900KF</td>
+                            <td>8 (16)</td>
+                            <td>3.0 (5.8) GHz</td>
+                            <td>16 (16)</td>
+                            <td>2.0 (4.3) GHz</td>
+                            <td>125 (253) W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--i7 13th Gen Table-->
+                <div id="i713th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Performance Cores (Threads)</th>
+                            <th>P Core Base (Turbo) Freq.</th>
+                            <th>Efficiency Cores (Threads)</th>
+                            <th>E Core Base (Turbo) Freq.</th>
+                            <th>Base (Turbo) Power Consumption</th>
+                            <th>Integrated GPU</th>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>i7-13700K</td>
+                            <td>8 (16)</td>
+                            <td>3.4 (5.4) GHz</td>
+                            <td>8 (8)</td>
+                            <td>2.5 (4.2) GHz</td>
+                            <td>125 (253) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i7-13700KF</td>
+                            <td>8 (16)</td>
+                            <td>3.4 (5.4) GHz</td>
+                            <td>8 (8)</td>
+                            <td>2.5 (4.2) GHz</td>
+                            <td>125 (253) W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--i5 13th Gen Table-->
+                <div id="i513th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Performance Cores (Threads)</th>
+                            <th>P Core Base (Turbo) Freq.</th>
+                            <th>Efficiency Cores (Threads)</th>
+                            <th>E Core Base (Turbo) Freq.</th>
+                            <th>Base (Turbo) Power Consumption</th>
+                            <th>Integrated GPU</th>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>i5-13600K</td>
+                            <td>6 (12)</td>
+                            <td>3.5 (5.1) GHz</td>
+                            <td>8 (8)</td>
+                            <td>2.6 (3.9) GHz</td>
+                            <td>125 (181) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-13600KF</td>
+                            <td>6 (12)</td>
+                            <td>3.5 (5.1) GHz</td>
+                            <td>8 (8)</td>
+                            <td>2.6 (3.9) GHz</td>
+                            <td>125 (181) W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--i9 12th Gen Table-->
+                <div id="i912th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Performance Cores (Threads)</th>
+                            <th>P Core Base (Turbo) Freq.</th>
+                            <th>Efficiency Cores (Threads)</th>
+                            <th>E Core Base (Turbo) Freq.</th>
+                            <th>Base (Turbo) Power Consumption</th>
+                            <th>Integrated GPU</th>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>i9-12900</td>
+                            <td>8 (16)</td>
+                            <td>2.4 (5.1) GHz</td>
+                            <td>8 (8)</td>
+                            <td>1.8 (3.8) GHz</td>
+                            <td>65 (202) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i9-12900F</td>
+                            <td>8 (16)</td>
+                            <td>2.4 (5.1) GHz</td>
+                            <td>8 (8)</td>
+                            <td>1.8 (3.8) GHz</td>
+                            <td>65 (202) W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>i9-12900K</td>
+                            <td>8 (16)</td>
+                            <td>3.2 (5.2) GHz</td>
+                            <td>8 (8)</td>
+                            <td>2.4 (3.9) GHz</td>
+                            <td>125 (241) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i9-12900KF</td>
+                            <td>8 (16)</td>
+                            <td>3.2 (5.2) GHz</td>
+                            <td>8 (8)</td>
+                            <td>2.4 (3.9) GHz</td>
+                            <td>125 (241) W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>i9-12900KS</td>
+                            <td>8 (16)</td>
+                            <td>3.4 (5.5) GHz</td>
+                            <td>8 (8)</td>
+                            <td>2.5 (4.0) GHz</td>
+                            <td>150 (241) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--i7 12th Gen Table-->
+                <div id="i712th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Performance Cores (Threads)</th>
+                            <th>P Core Base (Turbo) Freq.</th>
+                            <th>Efficiency Cores (Threads)</th>
+                            <th>E Core Base (Turbo) Freq.</th>
+                            <th>Base (Turbo) Power Consumption</th>
+                            <th>Integrated GPU</th>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>i7-12700</td>
+                            <td>8 (16)</td>
+                            <td>2.1 (4.9) GHz</td>
+                            <td>4 (4)</td>
+                            <td>1.6 (3.6) GHz</td>
+                            <td>65 (180) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i7-12700F</td>
+                            <td>8 (16)</td>
+                            <td>2.1 (4.9) GHz</td>
+                            <td>4 (4)</td>
+                            <td>1.6 (3.6) GHz</td>
+                            <td>65 (180) W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>i7-12700K</td>
+                            <td>8 (16)</td>
+                            <td>3.6 (5.0) GHz</td>
+                            <td>4 (4)</td>
+                            <td>2.7 (3.8) GHz</td>
+                            <td>125 (190) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i7-12700KF</td>
+                            <td>8 (16)</td>
+                            <td>3.6 (5.0) GHz</td>
+                            <td>4 (4)</td>
+                            <td>2.7 (3.8) GHz</td>
+                            <td>125 (190) W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!--i5 12th Gen Table-->
+                <div id="i512th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Performance Cores (Threads)</th>
+                            <th>P Core Base (Turbo) Freq.</th>
+                            <th>Efficiency Cores (Threads)</th>
+                            <th>E Core Base (Turbo) Freq.</th>
+                            <th>Base (Turbo) Power Consumption</th>
+                            <th>Integrated GPU</th>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>i5-12400</td>
+                            <td>6 (12)</td>
+                            <td>2.5 (4.4) GHz</td>
+                            <td>0 (0)</td>
+                            <td>---</td>
+                            <td>65 (117) W</td>
+                            <td>UHD 730</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-12400F</td>
+                            <td>6 (12)</td>
+                            <td>2.5 (4.4) GHz</td>
+                            <td>0 (0)</td>
+                            <td>---</td>
+                            <td>65 (117) W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-12500</td>
+                            <td>6 (12)</td>
+                            <td>3.0 (4.6) GHz</td>
+                            <td>0 (0)</td>
+                            <td>---</td>
+                            <td>65 (117) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-12600</td>
+                            <td>6 (12)</td>
+                            <td>3.3 (4.8) GHz</td>
+                            <td>0 (0)</td>
+                            <td>---</td>
+                            <td>65 (117) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-12600K</td>
+                            <td>6 (12)</td>
+                            <td>3.7 (4.9) GHz</td>
+                            <td>4 (4)</td>
+                            <td>2.8 (3.6) GHz</td>
+                            <td>125 (150) W</td>
+                            <td>UHD 770</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-12600KF</td>
+                            <td>6 (12)</td>
+                            <td>3.7 (4.9) GHz</td>
+                            <td>4 (4)</td>
+                            <td>2.8 (3.6) GHz</td>
+                            <td>125 (150) W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <!--i3 12th Gen Table-->
+                <div id="i312th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Freq.</th>
+                            <th>Base (Turbo) Power Consumption</th>
+                            <th>Integrated GPU</th>
+                            
+                        </tr>
+
+                        <tr>
+                        <td>i3-12100</td>
+                        <td>4 (8)</td>
+                        <td>3.3 (4.3) GHz</td>
+                        <td>60 (89) W</td>
+                        <td>UHD 730</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-12100F</td>
+                        <td>4 (8)</td>
+                        <td>3.3 (4.3) GHz</td>
+                        <td>58 (89) W</td>
+                        <td>---</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-12300</td>
+                        <td>4 (8)</td>
+                        <td>3.5 (4.4) GHz</td>
+                        <td>60 (89) W</td>
+                        <td>UHD 730</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <!--i9 11th Gen Table-->
+                <div id="i911th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>i9-11900</td>
+                            <td>8 (16)</td>
+                            <td>2.5 (5.2) GHz</td>
+                            <td>65 W</td>
+                            <td>UHD 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>i9-11900F</td>
+                            <td>8 (16)</td>
+                            <td>2.5 (5.2) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>i9-11900K</td>
+                            <td>8 (16)</td>
+                            <td>3.5 (5.3) GHz</td>
+                            <td>125 W</td>
+                            <td>UHD 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>i9-11900KF</td>
+                            <td>8 (16)</td>
+                            <td>3.5 (5.3) GHz</td>
+                            <td>125 W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!--i7 11th Gen Table-->
+                <div id="i711th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>i7-11700</td>
+                            <td>8 (16)</td>
+                            <td>2.5 (4.9) GHz</td>
+                            <td>65 W</td>
+                            <td>UHD 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>i7-11700F</td>
+                            <td>8 (16)</td>
+                            <td>2.5 (4.9) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>i7-11700K</td>
+                            <td>8 (16)</td>
+                            <td>3.6 (5.0) GHz</td>
+                            <td>125 W</td>
+                            <td>UHD 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>i7-11700KF</td>
+                            <td>8 (16)</td>
+                            <td>3.6 (5.0) GHz</td>
+                            <td>125 W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--i5 11th Gen Table-->
+                <div id="i511th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>i5-11400</td>
+                            <td>6 (12)</td>
+                            <td>2.6 (4.4) GHz</td>
+                            <td>65 W</td>
+                            <td>UHD 730</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-11400F</td>
+                            <td>6 (12)</td>
+                            <td>2.6 (4.4) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-11500</td>
+                            <td>6 (12)</td>
+                            <td>2.7 (4.6) GHz</td>
+                            <td>65 W</td>
+                            <td>UHD 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-11600</td>
+                            <td>6 (12)</td>
+                            <td>2.8 (4.8) GHz</td>
+                            <td>65 W</td>
+                            <td>UHD 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-11600K</td>
+                            <td>6 (12)</td>
+                            <td>3.9 (4.9) GHz</td>
+                            <td>125 W</td>
+                            <td>UHD 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>i5-11600KF</td>
+                            <td>6 (12)</td>
+                            <td>3.9 (4.9) GHz</td>
+                            <td>125 W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--i3 11th Gen Table-->
+                <div id="i311th">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>i3-10100</td>
+                            <td>4 (8)</td>
+                            <td>3.6 (4.3) GHz</td>
+                            <td>65 W</td>
+                            <td>UHD 630</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-10100F</td>
+                        <td>4 (8)</td>
+                        <td>3.6 (4.3) GHz</td>
+                        <td>65 W</td>
+                        <td>---</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-10105</td>
+                        <td>4 (8)</td>
+                        <td>3.7 (4.4) GHz</td>
+                        <td>65 W</td>
+                        <td>UHD 630</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-10105F</td>
+                        <td>4 (8)</td>
+                        <td>3.7 (4.4) GHz</td>
+                        <td>65 W</td>
+                        <td>---</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-10300</td>
+                        <td>4 (8)</td>
+                        <td>3.7 (4.4) GHz</td>
+                        <td>65 W</td>
+                        <td>UHD 630</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-10305</td>
+                        <td>4 (8)</td>
+                        <td>3.8 (4.5) GHz</td>
+                        <td>65 W</td>
+                        <td>UHD 630</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-10320</td>
+                        <td>4 (8)</td>
+                        <td>3.8 (4.6) GHz</td>
+                        <td>65 W</td>
+                        <td>UHD 630</td>
+                        </tr>
+
+                        <tr>
+                        <td>i3-10325</td>
+                        <td>4 (8)</td>
+                        <td>3.9 (4.7) GHz</td>
+                        <td>65 W</td>
+                        <td>UHD 630</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div>
+
+            </div>
+
+            <div>
+                <!--Ryzen 9 Zen 4 Table-->
+                <div id="R9zen4">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>7900X</td>
+                            <td>12 (24)</td>
+                            <td>4.7 (5.6) GHz</td>
+                            <td>170 W</td>
+                            <td>RDNA 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>7900X3D</td>
+                            <td>12 (24)</td>
+                            <td>4.7 (5.6) GHz</td>
+                            <td>170 W</td>
+                            <td>RDNA 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>7950X</td>
+                            <td>16 (32)</td>
+                            <td>4.5 (5.7) GHz</td>
+                            <td>170 W</td>
+                            <td>RDNA 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>7950X3D</td>
+                            <td>16 (32)</td>
+                            <td>4.5 (5.7) GHz</td>
+                            <td>170 W</td>
+                            <td>RDNA 2</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--Ryzen 7 Zen 4 Table-->
+                <div id="R7zen4">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>7700X</td>
+                            <td>8 (16)</td>
+                            <td>4.5 (5.4) GHz</td>
+                            <td>105 W</td>
+                            <td>RDNA 2</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--Ryzen 5 Zen 4 Table-->
+                <div id="R5zen4">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>7600X</td>
+                            <td>6 (12)</td>
+                            <td>4.7 (5.3) GHz</td>
+                            <td>105 W</td>
+                            <td>RDNA 2</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--Ryzen 9 Zen 3 Table-->
+                <div id="R9zen3">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>5900</td>
+                            <td>12 (24)</td>
+                            <td>3.0 (4.7) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>5900X</td>
+                            <td>12 (24)</td>
+                            <td>3.7 (4.8) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>5950X</td>
+                            <td>16 (32)</td>
+                            <td>3.4 (4.9) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <!--Ryzen 7 Zen 3 Table-->
+                <div id="R7zen3">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>5700GE</td>
+                            <td>8 (16)</td>
+                            <td>3.2 (4.6) GHz</td>
+                            <td>35 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>5700G</td>
+                            <td>8 (16)</td>
+                            <td>3.8 (4.6) GHz</td>
+                            <td>65 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>5700X</td>
+                            <td>8 (16)</td>
+                            <td>3.4 (4.6) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>5800</td>
+                            <td>8 (16)</td>
+                            <td>3.4 (4.6) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>5800X</td>
+                            <td>8 (16)</td>
+                            <td>3.8 (4.7) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>5800X3D</td>
+                            <td>8 (16)</td>
+                            <td>3.4 (4.5) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <!--Ryzen 5 Zen 3 Table-->
+                <div id="R5zen3">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>5600GE</td>
+                            <td>6 (12)</td>
+                            <td>3.4 (4.4) GHz</td>
+                            <td>35 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>5600G</td>
+                            <td>6 (12)</td>
+                            <td>3.9 (4.4) GHz</td>
+                            <td>65 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>5500</td>
+                            <td>6 (12)</td>
+                            <td>3.6 (4.2) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>5600</td>
+                            <td>6 (12)</td>
+                            <td>3.5 (4.4) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>5600X</td>
+                            <td>6 (12)</td>
+                            <td>3.7 (4.6) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--Ryzen 3 Zen 3 Table-->
+                <div id="R3zen3">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>5300GE</td>
+                            <td>4 (8)</td>
+                            <td>3.6 (4.2) GHz</td>
+                            <td>35 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>5300G</td>
+                            <td>4 (8)</td>
+                            <td>4.0 (4.2) GHz</td>
+                            <td>65 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!--Ryzen 9 Zen 2 Table-->
+                <div id="R9zen2">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>3900</td>
+                            <td>12 (24)</td>
+                            <td>3.1 (4.3) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>3900X</td>
+                            <td>12 (24)</td>
+                            <td>3.8 (4.6) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>3900XT</td>
+                            <td>12 (24)</td>
+                            <td>3.8 (4.7) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>3950X</td>
+                            <td>16 (32)</td>
+                            <td>3.5 (4.7) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <!--Ryzen 7 Zen 2 Table-->
+                <div id="R7zen2">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>4700GE</td>
+                            <td>8 (16)</td>
+                            <td>3.1 (4.3) GHz</td>
+                            <td>35 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>4700G</td>
+                            <td>8 (16)</td>
+                            <td>3.6 (4.4) GHz</td>
+                            <td>65 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>3700X</td>
+                            <td>8 (16)</td>
+                            <td>3.6 (4.4) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>3800X</td>
+                            <td>8 (16)</td>
+                            <td>3.9 (4.5) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>3800XT</td>
+                            <td>8 (16)</td>
+                            <td>3.9 (4.7) GHz</td>
+                            <td>105 W</td>
+                            <td>---</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <!--Ryzen 5 Zen 2 Table-->
+                <div id="R5zen2">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>4600GE</td>
+                            <td>6 (12)</td>
+                            <td>3.3 (4.2) GHz</td>
+                            <td>35 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>4600G</td>
+                            <td>6 (12)</td>
+                            <td>3.7 (4.2) GHz</td>
+                            <td>65 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>3600</td>
+                            <td>6 (12)</td>
+                            <td>3.6 (4.2) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>3600X</td>
+                            <td>6 (12)</td>
+                            <td>3.8 (4.4) GHz</td>
+                            <td>95 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>3600XT</td>
+                            <td>6 (12)</td>
+                            <td>3.8 (4.4) GHz</td>
+                            <td>95 W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--Ryzen 3 Zen 2 Table-->
+                <div id="R3zen2">
+                    <table>
+                        <tr>
+                            <th>CPU Model</th>
+                            <th>Cores (Threads)</th>
+                            <th>Base (Turbo) Clock</th>
+                            <th>Power Consumption</th>
+                            <th>Integrated GPU</th>
+                        </tr>
+
+                        <tr>
+                            <td>4300GE</td>
+                            <td>4 (8)</td>
+                            <td>3.5 (4.0) GHz</td>
+                            <td>35 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>4300G</td>
+                            <td>4 (8)</td>
+                            <td>3.8 (4.0) GHz</td>
+                            <td>65 W</td>
+                            <td>Radeon Graphics</td>
+                        </tr>
+
+                        <tr>
+                            <td>3100</td>
+                            <td>4 (8)</td>
+                            <td>3.6 (3.9) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+
+                        <tr>
+                            <td>3300X</td>
+                            <td>4 (8)</td>
+                            <td>3.8 (4.3) GHz</td>
+                            <td>65 W</td>
+                            <td>---</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+    </footer>
+
+    </body>
+</html>

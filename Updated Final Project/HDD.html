@@ -1,0 +1,58 @@
+<!doctype html>
+<link rel="stylesheet" href="hdd.css">
+<link href="../CSS Files/hdd.css" rel="stylesheet" type="text/css">
+<html>
+<head>
+<meta charset="UTF-8">
+<button class="btn"><i class="fa fa-home"></i><a href="homePage.html">Home</a></button>
+<title>HDD</title>
+<link href="hdd.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<button onclick="sortList()">Sort Alphbetically</button>
+	
+<div class="products"></div>
+
+<ul id = "id01">
+	<li>
+		<p>WD Blue 4TB Drive</p>
+    <a href="WD Blue.jpeg"><img src="WD Blue.jpeg" alt="WD Blue Drive" height="200"></a> </li>
+		<p>Price: 79.99</p>
+	
+	<li>
+		<p>Seagate 4TB Drive</p>
+    <a href="Seagate.jpeg"><img src="Seagate.jpeg" alt="Seagate Drive" height="200"></a> </li>
+		<p>Price:69.99</p>
+	
+	<li>
+		<p>Toshiba 4TB Drive</p>
+    <a href="Toshiba Drive.jpeg"><img src="Toshiba Drive.jpeg" alt="Toshiba Drive" height="200"></a> </li>
+		<p>Price: 59.99</p>
+</ul>
+
+<script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+	
+</body>
+</html>

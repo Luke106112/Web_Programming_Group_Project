@@ -1,0 +1,60 @@
+<!doctype html>
+<link rel="stylesheet" href="m.2.css">
+<link href="../CSS Files/m.2.css" rel="stylesheet" type="text/css">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>M.2</title>
+<button class="btn"><i class="fa fa-home"></i><a href="homePage.html">Home</a></button>
+<link href="m.2.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body>
+
+
+<button onclick="sortList()">Sort Alphabetically</button>
+	
+<ul id="id01">
+	<li>
+		<p>WD Black 1TB M.2 NVMe</p>
+    <a href="WD Black m.2.jpeg"><img src="WD Black m.2.jpeg" alt="WD Black NVMe" width="660" height="200"></a> </li>
+		<p>Price: 199.99</p>
+		
+	
+	<li>
+		<p>Samsung 980 Pro 1TB M.2 NVMe</p>
+    <a href="samsung m.2.jpeg"><img src="samsung m.2.jpeg" alt="Samsung NVMe" width="720" height="200"></a> </li>
+		<p>Price: 149.99</p>
+	
+	<li>
+		<p>Crucial 1TB M.2 NVMe</p>
+    <a href="Crucial m.2.jpeg"><img src="Crucial m.2.jpeg" alt="Crucial NVMe" width="312" height="200"></a> </li>
+		<p>Price: 129.99</p>
+	
+</ul>
+
+<script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+	
+</body>
+</html>

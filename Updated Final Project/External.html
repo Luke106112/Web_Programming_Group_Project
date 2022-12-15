@@ -1,0 +1,57 @@
+<!doctype html>
+<link rel="stylesheet" href="external.css">
+<link href="../CSS Files/external.css" rel="stylesheet" type="text/css">
+<html>
+<head>
+<meta charset="UTF-8">
+<button class="btn"><i class="fa fa-home"></i><a href="homePage.html">Home</a></button>
+<title>External</title>
+<link href="external.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<button onclick="sortList()">Sort Alphabetically</button>
+	
+<ul id="id01">
+	<li>
+		<p>WD 2TB External Drive</p>
+    <a href="WD External.jpeg"><img src="WD External.jpeg" alt="WD 4TB External Drive" width="200" height="200"></a> </li>
+		<p>Price: 79.99</p>
+	
+	<li>
+		<p>Seagate 2TB Drive</p>
+    <a href="Seagate External.jpeg"><img src="Seagate External.jpeg" alt="Seagate Drive" width="200" height="294"></a> </li>
+		<p>Price: 79.99</p>
+	
+	<li>
+		<p>Toshiba 4TB Drive</p>
+    <a href="Toshiba external.jpg"><img src="Toshiba external.jpg" alt="Toshiba Drive" width="200" height="200"></a> </li>
+		<p>Price: 104.99</p>
+	
+</ul>
+
+<script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+	
+</body>
+</html>

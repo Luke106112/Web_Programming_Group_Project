@@ -1,0 +1,55 @@
+<!doctype html>
+<link rel="stylesheet" href="ssd.css">
+<link href="../CSS Files/ssd.css" rel="stylesheet" type="text/css">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SSD</title>
+<button class="btn"><i class="fa fa-home"></i><a href="homePage.html">Home</a></button>
+<link href="ssd.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<button onclick="sortList()">Sort Alphabetically</button>
+
+<ul id="id01">
+	<li>
+		<p>WD Blue 1TB SSD</p>
+    <a href="=WD Blue SSD.jpeg"><img src="WD Blue SSD.jpeg" alt="WD Blue SSD" width="288" height="200"></a> </li>
+	
+	<li>
+		<p>Samsung EVO 1TB SSD</p>
+    <a href="Samsung ssd.jpeg"><img src="Samsung ssd.jpeg" alt="Samsung SSD" width="288" height="200"></a> </li>
+	
+	<li>
+		<p>Crucial 1TB SSD</p>
+    <a href="Crucial ssd.jpeg"><img src="Crucial ssd.jpeg" alt="Crucial SSD" width="348" height="200"></a> </li>
+	
+</ul>
+
+<script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("id01");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<link rel="stylesheet" href="Selector.css">
+<html>
+	
+	<head>
+        <script type="text/javascript">
+            function goToNewPage()
+            {
+                var url = document.getElementById('list').value;
+                if(url != 'none') {
+                    window.location = url;
+                }
+            }
+        </script>
+        
+        <title>PC Storage</title>
+	</head>
+
+     <body>
+
+        <header>
+            <h1>Team 8 PC Part Comparison</h1>
+            <nav>
+                <ul>
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="CPUHome.html">CPU</a></li>
+                    <li><a href="editable.html">GPU</a></li>
+                    <li><a href="Selector.html">Storage</a></li>
+                    <li><a href="Power_Supply.html">PSU</a></li>
+                </ul>
+            </nav>
+        </header>
+		 
+        <p>
+        <label>Storage Options</label>
+		 <h1>Hard Disk Drive (HDD)</h1>
+		 <h1>Solid State Drive (SSD)</h1>
+		 <h1>M.2 Nvme</h1>
+		 <h1>External Storage</h1>
+		</p>
+		 
+		<p>
+		<label>Storage Tips</label>
+		<h1>HDDs are generally cheaper than other options but offer slower speeds while offering more capacity. Recommended for users with lots of low impact files.</h1>
+		<h1>SSDs are slightly more expensive but offer greater read and write speeds while still coming in fairly large capacities. Recommended for power users and video editing.</h1>
+		<h1>M.2 Nvme drives are the latest and greatest offering incredible read and write speeds at a premium price point. We Recommended for PC Gaming.</h1>
+		<h1>External Storage Devices come in hand for transferring data between non network computers or storing additional files that are taking up space on your system. Recommended for console gamers and for video file storage.</h1>
+		</p>
+		
+        <form>
+            <select name="list" id="list" accesskey="target">
+                <option value="none" selected>Choose a Storage Option</option>
+                <option value="SSD.html">SSD</option>
+                <option value="HDD.html">HDD</option>
+                <option value="external.html">External</option>
+                <option value="M.2.html">M.2</option>
+            </select>
+            <input type="button" value="Go" onclick="goToNewPage()" />
+        </form>
+
+        <footer>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </footer>
+            
+		 
+		
+		 
+    </body>
+	
+</html>
